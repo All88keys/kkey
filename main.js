@@ -4,7 +4,6 @@ window.onkeyup = function(e) {
 
    if (key == 75) {
      times++;
-     alert(times);
+     document.getElementById('pressed').innerHTML = times;
    }
 }
-//document.getElementById('pressed').innerHTML = '5';
