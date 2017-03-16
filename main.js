@@ -6,6 +6,7 @@ window.onkeyup = function(e) {
    var key = e.keyCode ? e.keyCode : e.which;
 
    if (key == 75) {
+     audio.pause();
      times++;
      audio.play();
      document.getElementById('pressed').innerHTML = times;
