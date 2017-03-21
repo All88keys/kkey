@@ -4,7 +4,7 @@ var audio = new Audio('ding.mp3');
 var countingDown = false;
 
 
-window.onkeypress = function(e) {
+window.onkeyup = function(e) {
    var key = e.keyCode ? e.keyCode : e.which;
   
    if (key == 75) {
