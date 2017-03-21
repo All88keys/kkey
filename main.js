@@ -1,9 +1,12 @@
+var i = 60;
 var times= 0;
 var audio = new Audio('ding.mp3');
 
 
-window.onkeyup = function(e) {
+window.onkeypress = function(e) {
    var key = e.keyCode ? e.keyCode : e.which;
+   i = 60;
+   onTimer();
 
    if (key == 75) {
      audio.pause();
@@ -13,7 +16,6 @@ window.onkeyup = function(e) {
    }
 }
 
-i = 60;
 function onTimer() {
   document.getElementById('mycounter').innerHTML = i;
   i--;
