@@ -10,8 +10,8 @@ window.onkeyup = function(e) {
    if (key == 75) {
       if(!countingDown){
          i = 60;
-       onTimer();
        countingDown = true;
+       onTimer();
       }
       
      audio.pause();
