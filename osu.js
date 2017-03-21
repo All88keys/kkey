@@ -7,7 +7,7 @@ var countingDown = false;
 window.onkeyup = function(e) {
    var key = e.keyCode ? e.keyCode : e.which;
   
-   if (key == 90 || 88) {
+   if (key == 90 || key == 88) {
       if(!countingDown){
          i = 60;
        countingDown = true;
