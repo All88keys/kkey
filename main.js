@@ -27,9 +27,8 @@ function onTimer() {
   if (i < 0) {
     alert('You lose!');
     countingDown = false;
-    break;
   }
-  else {
+  else if(countingDown){
     setTimeout(onTimer, 1000);
   }
 }
