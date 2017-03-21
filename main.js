@@ -25,8 +25,9 @@ function onTimer() {
   document.getElementById('mycounter').innerHTML = i;
   i--;
   if (i < 0) {
-    alert('You lose!');
+    alert('TIME UP BITCH');
     countingDown = false;
+    times = 0;
   }
   else if(countingDown){
     setTimeout(onTimer, 1000);
