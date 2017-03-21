@@ -18,11 +18,11 @@ window.onkeypress = function(e) {
 
 function onTimer() {
   document.getElementById('mycounter').innerHTML = i;
-  i--;
+  i-0.1;
   if (i < 0) {
     alert('You lose!');
   }
   else {
-    setTimeout(onTimer, 1000);
+    setTimeout(onTimer, 100);
   }
 }
