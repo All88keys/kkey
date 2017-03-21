@@ -6,13 +6,14 @@ var countingDown = false;
 
 window.onkeypress = function(e) {
    var key = e.keyCode ? e.keyCode : e.which;
-   if(!countingDown){
-      i = 60;
-      onTimer();
-      countingDown = true;
-   }
-
+  
    if (key == 75) {
+      if(!countingDown){
+         i = 60;
+       onTimer();
+       countingDown = true;
+      }
+      
      audio.pause();
      times++;
      audio.play();
@@ -22,13 +23,13 @@ window.onkeypress = function(e) {
 
 function onTimer() {
   document.getElementById('mycounter').innerHTML = i;
-  i-0.1;
+  i--;
   if (i < 0) {
     alert('You lose!');
     countingDown = false;
     break;
   }
   else {
-    setTimeout(onTimer, 100);
+    setTimeout(onTimer, 1000);
   }
 }
