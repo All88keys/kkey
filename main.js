@@ -40,4 +40,5 @@ function onTimer() {
 function checkRate() {
    rate = timesPerSecond;
    document.getElementById('rate').innerHTML = rate;
+   timesPerSecond = 0;
 }
