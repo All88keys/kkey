@@ -1,8 +1,10 @@
+var timesPerSecond = 0;
+var rate = 0;
 var i = 60;
 var times= 0;
 var audio = new Audio('ding.mp3');
 var countingDown = false;
-
+var myVar = setInterval(checkRate, 1000);
 
 window.onkeyup = function(e) {
    var key = e.keyCode ? e.keyCode : e.which;
@@ -16,6 +18,7 @@ window.onkeyup = function(e) {
       
      audio.pause();
      times++;
+     timesPerSecond++;
      audio.play();
      document.getElementById('pressed').innerHTML = times;
    }
@@ -32,4 +35,9 @@ function onTimer() {
   else if(countingDown){
     setTimeout(onTimer, 1000);
   }
+}
+
+function checkRate() {
+   rate = timesPerSecond;
+   document.getElementById('rate').innerHTML = rate;
 }
