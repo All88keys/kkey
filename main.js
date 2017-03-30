@@ -2,7 +2,7 @@ var timesPerSecond = 0;
 var rate = 0;
 var i = 60;
 var times= 0;
-/var audio = new Audio('ding.mp3');
+//var audio = new Audio('ding.mp3');
 var countingDown = false;
 var myVar = setInterval(checkRate, 1000);
 
