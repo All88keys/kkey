@@ -1,6 +1,6 @@
 var timesPerSecond = 0;
 var rate = 0;
-var i = 60;
+var i = 30;
 var times= 0;
 var socket = io('https://kkey-leaderboard.herokuapp.com/');
 var countingDown = false;
@@ -12,7 +12,7 @@ window.onkeyup = function(e) {
 
    if (key == 75) {
       if(!countingDown){
-         i = 10;
+         i = 30;
        countingDown = true;
        onTimer();
       }
